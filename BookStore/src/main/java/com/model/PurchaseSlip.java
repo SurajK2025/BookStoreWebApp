@@ -1,15 +1,19 @@
 package com.model;
 
-public class Cart {
+import java.sql.Date;
+
+public class PurchaseSlip {
 	private int userid;
 	private int bookid;
+	private Date date;
 	
-	public Cart(int userid, int bookid) {
+	public PurchaseSlip(int userid, int bookid, Date date) {
 		super();
 		this.userid = userid;
 		this.bookid = bookid;
+		this.date = date;
 	}
-	
+
 	public int getUserid() {
 		return userid;
 	}
@@ -22,9 +26,15 @@ public class Cart {
 	public void setBookid(int bookid) {
 		this.bookid = bookid;
 	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
 	
 	@Override
 	public String toString() {
-		return "Cart [userid=" + userid + ", bookid=" + bookid + "]";
+		return "PurchaseHistory [userid=" + userid + ", bookid=" + bookid + ", date=" + date + "]";
 	}
 }

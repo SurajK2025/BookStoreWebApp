@@ -1,5 +1,9 @@
 package com.dao;
 
-public class CartDao {
-
+public interface CartDao {
+	public void addToCart(int userid, int bookid);
+	
+	public void removeFromCart(int userid, int bookid);
+	
+	public double totalCartAmount();
 }
