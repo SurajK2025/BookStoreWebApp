@@ -2,7 +2,7 @@ package com.dao;
 
 import com.model.User;
 
-public interface UsersDao {
+public interface IUserDao {
 	
 	public boolean validateUser(User user);
 	

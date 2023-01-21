@@ -3,7 +3,7 @@ package com.dao;
 import java.util.List;
 import com.model.Book;
 
-public interface BooksDao {
+public interface IBookDao {
 	public List<Book> getBooks();
 	
 	public void insertBook(Book book);
