@@ -4,13 +4,13 @@ use bookstore;
 
 create table books (
 	bookid integer primary key auto_increment,
-    bookname varchar(50),
+    booktitle varchar(50),
     author varchar(50),
     price double
 );
 
 insert into books values(63, "Clean Code", "Robert Martin", "600");
-insert into books (bookname, author, price) values("Design Patterns", "Grady Booch", "550");
+insert into books (booktitle, author, price) values("Design Patterns", "Grady Booch", "550");
 
 create table users (
 	userid integer primary key auto_increment,
